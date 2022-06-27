@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="132.067" height="133.791" viewBox="0 0 132.067 133.791">
+  <g id="Latest-Landing" transform="translate(0.176 -0.144)">
+    <g id="Group" transform="translate(0.884 0.894)">
+      <g id="Shapes-_-three-dimensional-square-_5_" data-name="Shapes-/-three-dimensional-square-(5)" transform="translate(0 0)">
+        <rect id="square" width="36.818" height="36.818" transform="translate(93.438 0.004)" fill="#9af3ff" stroke="#0d052c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <path id="rectangle" d="M130.754,62.446,37.315,157.919H.5L36.535,121.1l57.4-58.655Z" transform="translate(-0.498 -25.628)" fill="#62a3ff" stroke="#0d052c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <path id="rectangle-2" d="M93.936.5V37.315L36.535,95.97.5,132.788V95.97Z" transform="translate(-0.498 -0.498)" fill="#87d4ff" stroke="#0d052c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <g id="lines" transform="translate(0 11.595)">
+          <line id="Path" y1="95.473" x2="93.438" transform="translate(0 0)" fill="none" stroke="#0d052c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <line id="Path-2" data-name="Path" y1="95.473" x2="93.438" transform="translate(0 11.252)" fill="none" stroke="#0d052c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

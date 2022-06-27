@@ -1,0 +1,2022 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  src: url('../fonts/VIP-Hala-Bold.otf');
+  font-family: ARB;
+}
+
+html,
+body {
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*background-image: #ffc107;*/
+  background-image: url("../images/background.svg");
+  background-size: cover;
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+header {
+  top: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 55px;
+  background-color: whitesmoke;
+  border-bottom: 4px solid rgb(58, 58, 60);
+  transition: ease all 1s;
+}
+
+.wrapHeader .logo .logo-image{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapHeader .logo .logo-image img {
+  position: absolute;
+  max-width: 155px;
+  max-height: 334px;
+  z-index: 1;
+  margin-top: 3px;
+  transition: ease all 1s;
+
+}
+
+#game {
+  width: 100%;
+  max-width: 550px;
+  height: 100%;
+  max-height: 100%;
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#game .wrap-game{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  z-index: 4;
+  transition: ease all 1s;
+}
+
+#container .groupe{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.wrapBigCircle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 5px;
+  /*left: 228px;*/
+}
+
+#container .groupe .wrapBigCircle .big-circle{
+  position: absolute;
+
+  background-image: url("../images/big-circle.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 600px;
+  height: 600px;
+  /*transition: ease all 1s;*/
+
+  /*transform: translate(-50%,-50%);*/
+  animation: dotcircle 30s linear infinite;
+  /*animation-play-state: paused;*/
+}
+
+#container .groupe .big-circle:hover{
+}
+
+@keyframes dotcircle{
+
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+#container .shape-flechLeft{
+
+  /*transform: rotate(135deg);*/
+  animation: right-to-left 1.9s infinite 1.3s;
+}
+
+#container .shape-flechLeft:hover{
+  animation-play-state: paused;
+  /*animation-play-state: running;*/
+}
+
+@keyframes right-to-left{
+  0%{
+    transform: translateX(0);
+  }
+  50%{
+    transform: translateX(-7px);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+.wrapCircleLog {
+  /*position: absolute;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+#container .groupe .circle-log{
+
+  /*max-width: 70%;*/
+  /*left: 50px;*/
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  transition: ease all 1s;
+}
+
+#container .groupe .lightCircle{
+
+  /*display: flex;*/
+  /*justify-content: center;*/
+  /*align-items: center;*/
+
+
+
+}
+
+#container .groupe .lightCircle .light{
+  position: absolute;
+  border-radius: 50%;
+  animation: ring 3s linear infinite;
+}
+@keyframes ring {
+  0%{
+    transform: rotate(0deg);
+    background-color: #FFE524;
+    /*box-shadow: 0 0 15px black;*/
+    box-shadow: 0 0 15px #FED104;
+  }
+}
+
+#container .groupe .lightCircle .light1{
+  top: 84px;
+  left: 288.5px;
+  width: 20px;
+  height: 20px;
+  animation: ring 0.3s linear infinite;
+}
+
+#container .groupe .lightCircle .light2{
+  top: 144px;
+  left: 433px;
+  width: 20px;
+  height: 20px;
+  animation: ring 0.5s linear infinite;
+}
+#container .groupe .lightCircle .light3{
+  top: 288px;
+  left: 493px;
+  width: 20px;
+  height: 20px;
+  animation: ring 0.3s linear infinite;
+}
+#container .groupe .lightCircle .light4{
+  top: 432px;
+  left: 433px;
+  width: 20px;
+  height: 20px;
+  animation: ring 0.5s linear infinite;
+}
+
+#container .groupe .lightCircle .light5{
+  top: 492px;
+  left: 289px;
+  width: 20px;
+  height: 20px;
+  animation: ring 0.3s linear infinite;
+}
+
+#container .groupe .lightCircle .light6{
+  top: 432.5px;
+  left: 145px;
+  width: 20px;
+  height: 20px;
+  animation: ring 0.5s linear infinite;
+}
+
+#container .groupe .lightCircle .light7{
+  top: 288.5px;
+  left: 85px;
+  width: 20px;
+  height: 20px;
+  animation: ring 0.3s linear infinite;
+}
+
+#container .groupe .lightCircle .light8{
+  top: 144px;
+  left: 145px;
+  width: 20px;
+  height: 20px;
+  animation: ring 0.5s linear infinite;
+}
+
+#container .shape-flechLeft{
+  position: absolute;
+  top: 16%;
+  left: 209%;
+  width: 100%;
+  max-width: 76.5%;
+  height: 100%;
+  max-height: 72%;
+  z-index: 1;
+  transition: ease all 1s;
+}
+
+#container .shape-rectangle{
+  position: absolute;
+  bottom: -12px;
+
+  left: 8%;
+  width: 100%;
+  max-width: 5%;
+  height: 100%;
+  max-height: 12%;
+  transition: ease all 1s;
+}
+
+#container .shape-croix{
+  position: absolute;
+  top: 10%;
+  left: 33%;
+  width: 100%;
+  max-width: 4%;
+  height: 100%;
+  max-height: 8%;
+  transition: ease all 1s;
+  z-index: 5;
+}
+
+#container .shape-pyramids{
+  position: absolute;
+  top: 50%;
+  right: -2%;
+  width: 100%;
+  max-width: 6.5%;
+  height: 100%;
+  max-height: 12%;
+  transition: ease all 1s;
+}
+
+#board-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  /*height: 100%;*/
+  /*max-height: 51%;*/
+  width: 100%;
+  max-width: 53%;
+
+  /*margin-top: 99px;*/
+  /*overflow: hidden;*/
+}
+
+#board-container .info{
+  /*width: 285px;*/
+  display: flex;
+  justify-content: flex-start;
+
+  height: 100px;
+  max-height: 100%;
+  width: 100%;
+  max-width: 100%;
+
+  margin-bottom: 4px;
+}
+
+#board-container .info .icon-info button{
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+#board-container .info .icon-info i{
+  font-size: 20px;
+  color: darkblue;
+}
+
+#board-container .info .wrap-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*width: 100%;*/
+  height: 100%;
+  max-height: 100%;
+  width: 100%;
+  max-width: 100%;
+}
+
+.message{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  max-height: 100%;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 18px;
+}
+
+.message .alertMessage{
+  /*display: flex;*/
+  /*justify-content: center;*/
+  /*align-items: center;*/
+
+  font-family: ARB;
+  font-weight: bold;
+  border: 3px solid darkblue;
+  padding: 0;
+  height: 41px;
+  max-height: 50px;
+  width: 100%;
+  max-width: 98%;
+  cursor: pointer;
+  color: white;
+  box-shadow: 4px 5px darkblue;
+  text-transform: uppercase;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 14.5px;
+  line-height: 2.5;
+  /*visibility: visible;*/
+  /*opacity: 1;*/
+  /*display: inline-block;*/
+
+  visibility: hidden;
+  opacity: 0;
+  display:none;
+  transition: visibility 0s, opacity 0.5s;
+}
+
+.message .alertFin{
+  /*display: flex;*/
+  /*justify-content: center;*/
+  /*align-items: center;*/
+
+  font-family: ARB;
+  font-weight: bold;
+  border: 3px solid darkblue;
+  padding: 4px;
+  height: 100%;
+  max-height: 95%;
+  width: 100%;
+  max-width: 98%;
+  cursor: pointer;
+  color: white;
+  box-shadow: 4px 5px darkblue;
+  text-transform: uppercase;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 13px;
+
+
+
+
+  /*visibility: visible;*/
+  /*opacity: 1;*/
+  /*display: block;*/
+  visibility: hidden;
+  opacity: 0;
+  display:none;
+  transition: visibility 0s, opacity 0.5s;
+}
+
+/**************************** MODAL STAT **************************/
+.wrap-info .icon-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8px 0 12px;
+}
+
+.modal-bg-stat{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  /*visibility: visible;*/
+  /*opacity: 1;*/
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+  z-index: 999;
+  overflow-y: scroll;
+}
+
+.wrap-modal-bg-stat{
+  position: relative;
+  /*width: 30%;*/
+  /*height: 15%;*/
+
+  width: 100%;
+  max-width: 30%;
+  height: 100%;
+  max-height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.modal-form-stat {
+  position: absolute;
+  font-family: ARB;
+  background-color: white;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 9px;
+  border: 4px solid darkblue;
+  padding: 8px 21px;
+  transition: ease all .5s;
+}
+
+.modal-form-stat .titleStat {
+  color: darkblue;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.modal-form-stat .time {
+  display: flex;
+  /*justify-content: center;*/
+  /*align-items: flex-end;*/
+}
+
+.modal-form-stat .timeLeft {
+  color: cornflowerblue;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.modal-form-stat .timeL {
+  margin-right: 11px;
+  color: royalblue;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.wrap-stat {
+  display: flex;
+  /*width: 100%;*/
+  /*height: 100%;*/
+}
+
+.wrap-stat .wrap-stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  margin: 7px 0;
+}
+
+.wrap-stat .wrap-stat-item .textValue{
+  font-size: 19px;
+  font-weight: bold;
+  color: darkblue;
+}
+
+.wrap-stat .wrap-stat-item p{
+  max-width: 75%;
+  text-align: center;
+  font-size: 10px;
+  font-weight: bold;
+  color: #4682B4;
+}
+
+.modal-close-stat{
+  position: absolute;
+  font-size: 27px;
+  top: 20px;
+  right: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  color: darkblue;
+}
+/**************************** MODAL INFO  **************************/
+
+.modal-bg{
+  position: fixed;
+
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  /*visibility: visible;*/
+  /*opacity: 1;*/
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+  z-index: 999;
+  overflow-y: scroll;
+}
+
+/*.bg-active{*/
+/*  visibility: visible;*/
+/*  opacity: 1;*/
+/*}*/
+.wrap-modal-bg{
+  z-index: 999;
+  position: relative;
+  width: 100%;
+  max-width: 25%;
+  height: 100%;
+  max-height: 70%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.modal-form {
+  position: absolute;
+  font-family: ARB;
+  background-color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 9px;
+  border: 4px solid darkblue;
+  padding: 28px 20px;
+  transition: ease all .5s;
+  /*overflow: hidden;*/
+}
+
+
+.modal-form h4{
+  color: darkblue;
+  margin-bottom: 15px;
+}
+
+.modal-form p{
+  font-size: 12px;
+  color: #769AB1;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-top: 4%;
+  margin-bottom: 6%;
+  max-width: 90%;
+  max-height: 50%;
+  /*overflow: hidden;*/
+  text-align: center;
+}
+
+.modal-form .second-p {
+  margin-top: -18px;
+}
+
+.modal-s {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-s .modal-square {
+  border: 4px solid darkblue;
+  min-width: 52px;
+  min-height: 52px;
+  font-size: 20px;
+  font-weight: bold;
+  color: darkblue;
+  text-transform: uppercase;
+  margin-right: -3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-s .first{
+  border-radius: 0px 11px 11px 0px;
+}
+
+.modal-s .last{
+  border-radius: 11px 0px 0px 11px;
+}
+
+.modal-s .green{
+  background-color: mediumseagreen;
+}
+
+.modal-s .orange{
+  background-color: darkorange;
+}
+
+.modal-s .gray{
+  background-color: lightslategray;
+}
+
+.modal-close{
+  position: absolute;
+  font-size: 27px;
+  top: 20px;
+  right: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  color: darkblue;
+}
+
+/**************************** MODAL WIN ****************************/
+
+.modal-win{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+  z-index: 999;
+  overflow-y: scroll;
+
+}
+
+.wrap-modal-win{
+  position: relative;
+  width: 100%;
+  max-width: 24%;
+  min-width: 24%;
+  height: 100%;
+  max-height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+
+.modal-form-win {
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 35px;
+  border: 4px solid darkblue;
+  padding: 0px 10px 20px 15px;
+  transition: ease all .5s;
+}
+
+.modal-form-win h2 {
+  font-size: 32px;
+  color: #E03268;
+  margin-top: -15px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.modal-form-win p {
+  color: #B3446C;
+  margin-bottom: 20px;
+  font-size: 15px;
+  background-color: #ffe3ba;
+  border-radius: 18px;
+  padding: 9px 16px;
+  /*border: 1px solid #E03268;*/
+  box-shadow: 2px 2px 4px #D58A94;
+}
+
+.modal-form-win p span{
+  font-weight: bold;
+}
+
+.smile-icon{
+  font-size: 32px !important;
+  color: #E03268 !important;
+}
+
+.modal-form-win .btn {
+  font-size: 19px;
+  color: white;
+  width: 33%;
+  height: 7.5%;
+  font-weight: bold;
+  border-radius: 15px;
+  /*margin-bottom: 15px;*/
+  background-color: #12AD2B;
+  box-shadow: 2px 2px 2px #7BCCB5;
+}
+
+.modal-form-win .btn .abtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+}
+
+.modal-form-win button i{
+  color: white;
+}
+
+.modal-form-win button:hover {
+  color: #FF5E7B;
+  background-color: #53ce60;
+}
+
+.wrap_img {
+  width: 100%;
+  height: 65%;
+}
+.modal-form-win img{
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+}
+
+.modal-close-winner{
+  position: absolute;
+  font-size: 22px;
+  top: 20px;
+  right: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  color: darkblue;
+}
+
+#board-container > div.info > div > div.modal-win.bg-active > div > i {
+  position: absolute;
+  font-size: 22px;
+  top: 20px;
+  right: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  color: darkblue;
+}
+
+/***************************** Board ***************************/
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 0px;
+  padding: 10px;
+  margin-top: -7px;
+  z-index: 1;
+}
+
+#board .square:first-child{
+  border-radius: 0 10px 0 0;
+}
+
+#board .square:nth-child(5) {
+  border-radius: 10px 0 0 0;
+}
+
+#board .square:nth-child(21) {
+  border-radius: 0 0 10px 0;
+}
+
+#board .square:nth-child(25) {
+  border-radius: 0 0 0 10px;
+}
+
+
+.square {
+  font-family: ARB;
+  border: 4px solid darkblue;
+  min-width: 60px;
+  min-height: 60px;
+  font-size: 16px;
+  font-weight: bold;
+  color: darkblue;
+  text-transform: uppercase;
+  background-color: white;
+  margin-right: -4px;
+  margin-bottom: -4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.squareRounded {
+  border: 4px solid darkblue;
+  border-radius: 10px;
+  min-width: 60px;
+  min-height: 60px;
+  font-size: 50px;
+  font-weight: bold;
+  color: gainsboro;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/***************************** keyboard ***************************/
+#keyboard-container {
+  /*max-height: 200px;*/
+  /*max-width: 200px;*/
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 20%;
+  margin-top: 20px;
+  transition: ease all .5s;
+}
+
+
+/*#keyboard-container .keyboard-row .v-btn{*/
+/*  font-family: inherit;*/
+/*  font-weight: bold;*/
+/*  border: 3px solid darkblue;*/
+/*  padding: 0;*/
+/*  height: 40px;*/
+/*  cursor: pointer;*/
+/*  background-color: hotpink;*/
+/*  color: white;*/
+/*  box-shadow: 4px 5px darkblue;*/
+/*  text-transform: uppercase;*/
+/*  border-radius: 8px;*/
+/*}*/
+
+
+.keyboard-row {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  max-height: 47px;
+  min-height: 30px;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto 5px;
+  touch-action: manipulation;
+}
+.keyboard-row .keyLineUp{
+  padding-top: 10px;
+}
+
+.keyboard-row .keySmall{
+  font-size: 15.6px;
+}
+
+.keyboard-row button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: ARB;
+  font-weight: bold;
+  font-size: 14px;
+  padding-top: 7px;
+  border: 3px solid darkblue;
+
+  height: 100%;
+  max-height: 50px;
+  min-height: 30px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 23px;
+
+  cursor: pointer;
+  background-color: white;
+  color: darkblue;
+  flex-grow: 1;
+  text-transform: uppercase;
+  margin-right: 3px;
+  border-radius: 8px;
+  user-select: none;
+  transition: all .14s ease-out;
+}
+
+.keyboard-row button:hover {
+  box-shadow: 1.7px 2px darkblue;
+  transform: translate(-2px, -2px);
+}
+
+#keyboard-container .keyboard-row .wrap-keyboard-row-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  max-height: 100%;
+  width: 100%;
+  max-width: 100%;
+  z-index: 1;
+
+}
+
+#keyboard-container .keyboard-row .wrap-keyboard-row-btn button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: ARB;
+  font-weight: bold;
+  font-size: 14.5px;
+  border: 3px solid darkblue;
+  padding: 0;
+  height: 100%;
+  max-height: 78%;
+  min-height: 30px;
+  width: 100%;
+  max-width: 29%;
+  min-width: 105px;
+  /* min-width: 6px; */
+  /* height: 40px; */
+  cursor: pointer;
+  background-color: hotpink;
+  color: white;
+  box-shadow: 3.5px 3px darkblue;
+  text-transform: uppercase;
+  border-radius: 8px;
+  /*transition: ease all 1s;*/
+  transition: all .54s ease-out;
+}
+
+#keyboard-container .keyboard-row .wrap-keyboard-row-btn button:hover {
+  box-shadow: 1.7px 2px darkblue;
+  transform: translate(2px, 2px);
+}
+
+
+#keyboard-container .keyboard-row .wrap-keyboard-row-btn button:hover {
+  box-shadow: 0 0 #FED104;
+}
+
+.keyboard-row button:hover {
+  background-color: #EDEDED ;
+}
+
+.keys.active {
+  background-color: #333;
+  color: #fff;
+}
+
+.keys.remove {
+  animation: keys_animation 0.5s forwards ;
+}
+
+.spacer-half {
+  flex-grow: 0.5;
+}
+
+.whatsapp-btn{
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  max-height: 50px;
+  min-height: 30px;
+  width: 100%;
+  max-width: 29%;
+  min-width: 23px;
+}
+.whatsapp-btn .btn {
+
+  height: 100%;
+  max-height: 78%;
+  width: 100%;
+  max-width: 100%;
+
+  font-size: 19px;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: #12AD2B;
+  box-shadow: 3.5px 3px darkblue;
+  transition: ease all 1s;
+}
+
+.whatsapp-btn .btn .btn-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+}
+
+.whatsapp-btn button i{
+  color: white;
+}
+
+.whatsapp-btn button:hover {
+  box-shadow: 1.7px 2px darkblue;
+  transform: translate(2px, 2px);
+}
+
+.whatsapp-btn button:hover {
+  color: #FF5E7B;
+  background-color: #53ce60;
+  box-shadow: 0 0 #FED104;
+}
+
+.whatsapp-btn{
+  margin-left: 6px;
+  visibility: hidden;
+  opacity: 0;
+  display: none !important;
+}
+
+.bg-active{
+  visibility: visible;
+  opacity: 1;
+}
+
+/**************************** MEDIA QUERY  **************************/
+
+
+@media all and (min-width: 2500px) and (max-width: 3840px) {
+  @media all and (min-height: 1400px) and (max-height: 2300px) {
+
+
+    header {
+      height: 90px;
+    }
+
+    .wrapHeader .logo .logo-image img {
+      max-width: 251px;
+      margin-top: 8px;
+    }
+
+    #board-container {
+      max-width: 67%;
+    }
+
+
+    .message .alertMessage {
+      height: 70px;
+      max-height: 100%;
+      font-size: 21.5px;
+      line-height: 3;
+    }
+
+    .message .alertFin {
+      height: 74px;
+      max-height: 100%;
+      font-size: 17px;
+      line-height: 1.5;
+    }
+
+    #board-container .info{
+      margin-bottom: 14px;
+    }
+
+    #board-container .info .icon-info i {
+      font-size: 35px;
+    }
+
+    .square {
+      border: 5px solid darkblue;
+      min-width: 100px;
+      min-height: 100px;
+      font-size: 22px;
+      margin-right: -5px;
+      margin-bottom: -5px;
+    }
+
+    #game {
+      width: 100%;
+      max-width: 715px;
+    }
+    .keyboard-row {
+      max-height: 62px;
+    }
+
+    .keyboard-row button {
+      max-height: 100%;
+      border: 4px solid darkblue;
+      border-radius: 12px;
+      font-size: 17px;
+    }
+
+    #keyboard-container .keyboard-row .wrap-keyboard-row-btn {
+      margin-top: 20px;
+    }
+
+    #keyboard-container .keyboard-row .wrap-keyboard-row-btn button {
+      max-width: 41%;
+      border: 4px solid darkblue;
+      max-height: 99%;
+      font-size: 23.5px;
+    }
+
+    .wrapBigCircle {
+      /*left: -331px;*/
+    }
+
+    #container .groupe .big-circle {
+      /*max-height: 84%;*/
+    }
+
+    #container .shape-flechLeft {
+      left: 195%;
+      max-width: 47.5%;
+      max-height: 68%;
+    }
+
+    #container .shape-rectangle {
+      bottom: -37px;
+      /*max-height: 13%;*/
+    }
+
+    #container .shape-croix {
+      max-width: 5%;
+      max-height: 9%;
+    }
+
+
+    #container .groupe .wrapBigCircle .big-circle {
+      width: 900px;
+      height: 900px;
+    }
+
+    #container .groupe .circle-log {
+      width: 199px;
+      height: 185px;
+    }
+
+    #container .groupe .lightCircle .light1{
+      top: 126px;
+      left: 432px;
+      width: 30px;
+      height: 30px;
+
+    }
+
+    #container .groupe .lightCircle .light2{
+      top: 216px;
+      left: 649px;
+      width: 30px;
+      height: 30px;
+    }
+    #container .groupe .lightCircle .light3{
+      top: 433px;
+      left: 738px;
+      width: 30px;
+      height: 30px;
+    }
+    #container .groupe .lightCircle .light4{
+      top: 649px;
+      left: 649px;
+      width: 30px;
+      height: 30px;
+    }
+
+    #container .groupe .lightCircle .light5{
+      top: 738px;
+      left: 432px;
+      width: 30px;
+      height: 30px;
+    }
+
+    #container .groupe .lightCircle .light6{
+      top: 648.5px;
+      left: 216px;
+      width: 30px;
+      height: 30px;
+    }
+
+    #container .groupe .lightCircle .light7{
+      top: 432px;
+      left: 127px;
+      width: 30px;
+      height: 30px;
+    }
+
+    #container .groupe .lightCircle .light8{
+      top: 216px;
+      left: 217px;
+      width: 30px;
+      height: 30px;
+    }
+
+
+    /****MODAL***/
+
+    .modal-form {
+      border-radius: 30px;
+      padding: 40px 20px;
+    }
+
+    .modal-form h4 {
+      font-size: 2.5rem;
+    }
+
+    .modal-form p {
+      font-size: 21px;
+    }
+
+    .wrap-modal-bg-stat {
+      width: 100%;
+      max-width: 21%;
+      height: 100%;
+      max-height: 18%;
+    }
+
+    .modal-form-stat {
+      height: 100%;
+      width: 100%;
+      border-radius: 25px;
+    }
+
+    .modal-form-stat .titleStat {
+      font-size: 26px;
+    }
+
+    .wrap-stat .wrap-stat-item .textValue {
+      font-size: 31px;
+    }
+
+    .wrap-stat .wrap-stat-item p {
+      font-size: 14px;
+    }
+    /*********/
+
+  }
+}
+
+@media all and (min-width: 1024px)  {
+  @media all and (max-height: 700px)  {
+
+    #container {
+      height: 100vh;
+      max-height: 100vh;
+      overflow-y: scroll;
+    }
+
+    #game .wrap-game {
+      margin-top: 200px;
+    }
+  }
+}
+
+@media all and (min-width: 1024px)  {
+  @media all and (max-height: 450px)  {
+
+    #container {
+      height: 100vh;
+      max-height: 100vh;
+      overflow-y: scroll;
+    }
+
+    #game .wrap-game {
+      margin-top: 250px !important;
+    }
+    #board-container{
+      max-width: 55% !important;
+    }
+  }
+}
+
+@media all and (min-width: 300px)  {
+  @media all and (max-height: 374px)  {
+
+    #container {
+      height: 100vh;
+      max-height: 100vh;
+      overflow-y: scroll;
+    }
+
+    #game .wrap-game {
+      margin-top: 400px;
+    }
+
+    #container .groupe {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      margin-top: 1482px;
+    }
+
+    .wrapBigCircle {
+      left: 0;
+    }
+
+    #board-container{
+      max-width: 72%;
+    }
+
+    #container .groupe .wrapBigCircle .big-circle {
+      width: 500px;
+      height: 500px;
+    }
+
+    #container .groupe .circle-log {
+      width: 100px;
+      height: 100px;
+    }
+
+    #container .shape-croix {
+      top: 10%;
+      left: 3%;
+      max-width: 11%;
+      max-height: 6%;
+    }
+
+    #container .shape-pyramids {
+      top: 46%;
+      right: -7%;
+      max-width: 16.5%;
+      max-height: 7%;
+    }
+
+    #container .shape-rectangle {
+      bottom: -25px;
+      left: -3%;
+      max-width: 11%;
+    }
+
+    #container .shape-flechLeft {
+      top: -178%;
+      left: 0%;
+      max-width: 135.5%;
+      max-height: 75%;
+      transform: rotate(-90deg);
+      animation: right-to-left 1.9s infinite 1.3s;
+    }
+
+    @keyframes right-to-left{
+      0%{
+        transform: translateY(0) rotate(-90deg);
+      }
+      50%{
+        transform: translateY(-7px) rotate(-90deg);
+      }
+      100%{
+        transform: translateY(0) rotate(-90deg);
+      }
+    }
+
+    #container .groupe .lightCircle .light1{
+      top: 70px;
+      left: 240.5px;
+      width: 17px;
+      height: 17px;
+    }
+    #container .groupe .lightCircle .light2{
+      top: 120px;
+      left: 361px;
+      width: 17px;
+      height: 17px;
+    }
+    #container .groupe .lightCircle .light3{
+      top: 240px;
+      left: 410px;
+      width: 17px;
+      height: 17px;
+    }
+    #container .groupe .lightCircle .light4{
+      top: 360px;
+      left: 361px;
+      width: 17px;
+      height: 17px;
+    }
+    #container .groupe .lightCircle .light5{
+      top: 410px;
+      left: 240px;
+      width: 17px;
+      height: 17px;
+    }
+    #container .groupe .lightCircle .light6{
+      top: 360px;
+      left: 120px;
+      width: 17px;
+      height: 17px;
+    }
+    #container .groupe .lightCircle .light7{
+      top: 239.5px;
+      left: 71px;
+      width: 17px;
+      height: 17px;
+    }
+    #container .groupe .lightCircle .light8{
+      top: 120px;
+      left: 120px;
+      width: 17px;
+      height: 17px;
+    }
+
+
+  }
+}
+
+@media all and (min-width: 650px)  {
+  @media all and (max-height: 450px)  {
+
+    #container {
+      height: 100vh;
+      max-height: 100vh;
+      overflow-y: scroll;
+    }
+
+    #game .wrap-game {
+      margin-top: 250px !important;
+    }
+
+    #container .groupe {
+      margin-top: 1100px !important;
+    }
+
+    #board-container{
+      max-width: 50% !important;
+    }
+
+    .modal-form h4 {
+      font-size: 14px !important;
+    }
+
+    .modal-form p {
+      font-size: 8px !important;
+    }
+
+    .wrap-modal-bg-stat {
+      width: 100%;
+      max-width: 80%;
+      height: 100%;
+      max-height: 40% !important;
+    }
+
+    .modal-form-stat {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+@media all and (min-width: 200px) and (max-width: 1023px) {
+  @media all and (min-height: 917px)  {
+
+    #container {
+      height: 100vh;
+      max-height: 100vh;
+      overflow-y: scroll;
+    }
+
+    #game .wrap-game {
+      margin-top: -134px;
+    }
+
+    .wrap-modal-bg{
+      width: 53%;
+      max-width: none;
+    }
+
+    .modal-form p {
+      font-size: 16px;
+    }
+
+    .modal-s .modal-square {
+      min-width: 62px;
+      min-height: 62px;
+    }
+
+    .wrap-modal-bg-stat{
+      width: 75%;
+      max-width: none;
+    }
+
+    .modal-form-stat .titleStat {
+      font-size: 26px;
+    }
+
+    .wrap-stat .wrap-stat-item .textValue{
+      font-size: 27px;
+    }
+
+    .wrap-stat .wrap-stat-item p{
+      font-size: 19px;
+    }
+
+    .wrap-modal-win {
+      max-width: 44%;
+    }
+
+    #container .groupe {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      /*margin-top: 305px;*/
+    }
+
+    .wrapBigCircle {
+      left: 0;
+    }
+
+    #container .groupe .wrapBigCircle .big-circle {
+      width: 500px;
+      height: 500px;
+    }
+
+    #container .groupe .circle-log {
+      width: 100px;
+      height: 100px;
+    }
+
+    #container .shape-croix {
+      top: 10%;
+      left: 12%;
+      max-width: 11%;
+      max-height: 6%;
+    }
+
+    #container .shape-pyramids {
+      top: 46%;
+      right: -7%;
+      max-width: 16.5%;
+      max-height: 7%;
+    }
+
+    #container .shape-rectangle {
+      bottom: 102px;
+      left: -3%;
+      max-width: 11%;
+    }
+
+    #container .shape-flechLeft {
+      top: -178%;
+      left: 0%;
+      max-width: 135.5%;
+      max-height: 75%;
+      transform: rotate(-90deg);
+      animation: right-to-left 1.9s infinite 1.3s;
+    }
+
+    @keyframes right-to-left{
+      0%{
+        transform: translateY(0) rotate(-90deg);
+      }
+      50%{
+        transform: translateY(-7px) rotate(-90deg);
+      }
+      100%{
+        transform: translateY(0) rotate(-90deg);
+      }
+    }
+
+    #container .groupe .lightCircle .light1{
+      top: 70px;
+      left: 240.5px;
+      width: 17px;
+      height: 17px;
+    }
+    #container .groupe .lightCircle .light2{
+      top: 120px;
+      left: 361px;
+      width: 17px;
+      height: 17px;
+    }
+    #container .groupe .lightCircle .light3{
+      top: 240px;
+      left: 410px;
+      width: 17px;
+      height: 17px;
+    }
+    #container .groupe .lightCircle .light4{
+      top: 360px;
+      left: 361px;
+      width: 17px;
+      height: 17px;
+    }
+    #container .groupe .lightCircle .light5{
+      top: 410px;
+      left: 240px;
+      width: 17px;
+      height: 17px;
+    }
+    #container .groupe .lightCircle .light6{
+      top: 360px;
+      left: 120px;
+      width: 17px;
+      height: 17px;
+    }
+    #container .groupe .lightCircle .light7{
+      top: 239.5px;
+      left: 71px;
+      width: 17px;
+      height: 17px;
+    }
+    #container .groupe .lightCircle .light8{
+      top: 120px;
+      left: 120px;
+      width: 17px;
+      height: 17px;
+    }
+
+  }
+}
+
+@media all and (min-width: 280px) and (max-width: 1023px) {
+  @media all and (min-height: 751px) and (max-height: 916px) {
+
+    #container {
+      height: 100vh;
+      max-height: 100vh;
+      overflow-y: scroll;
+    }
+
+    #game .wrap-game {
+      margin-top: -70px;
+    }
+
+    .wrap-modal-bg{
+      width: 88%;
+      max-width: none;
+      /*max-width: none;*/
+    }
+
+    .wrap-modal-bg-stat{
+      width: 90%;
+      max-width: none;
+    }
+
+    .wrap-stat .wrap-stat-item .textValue{
+      font-size: 22px;
+    }
+
+    .wrap-stat .wrap-stat-item p{
+      font-size: 12px;
+    }
+
+    #board-container {
+      width: 100%;
+      max-width: 74%;
+    }
+
+    #keyboard-container {
+      max-width: 96%;
+      margin-top: 14px;
+      /*max-height: 31%;*/
+    }
+
+    .wrap-modal-win {
+      max-width: 77%;
+    }
+
+    #container .groupe {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      margin-top: 305px;
+    }
+
+    .wrapBigCircle {
+      left: 0;
+    }
+
+    #container .groupe .wrapBigCircle .big-circle {
+      width: 500px;
+      height: 500px;
+    }
+
+    #container .groupe .circle-log {
+      width: 100px;
+      height: 100px;
+    }
+
+    #container .shape-croix {
+      top: 10%;
+      left: 2%;
+      max-width: 11%;
+      max-height: 6%;
+    }
+
+    #container .shape-pyramids {
+      top: 46%;
+      right: -6%;
+      max-width: 16.5%;
+      max-height: 7%;
+    }
+
+    #container .shape-rectangle {
+      bottom: 102px;
+      left: -3%;
+      max-width: 12%;
+    }
+
+
+    #container .shape-flechLeft {
+      top: -160%;
+      left: 19%;
+      max-width: 61.5%;
+      max-height: 60%;
+      transform: rotate(-90deg);
+      animation: right-to-left 1.9s infinite 1.3s;
+    }
+
+    @keyframes right-to-left{
+      0%{
+        transform: translateY(0) rotate(-90deg);
+      }
+      50%{
+        transform: translateY(-7px) rotate(-90deg);
+      }
+      100%{
+        transform: translateY(0) rotate(-90deg);
+      }
+    }
+
+
+    #container .groupe .lightCircle .light1{
+      top: 70px;
+      left: 240.5px;
+      width: 17px;
+      height: 17px;
+    }
+    #container .groupe .lightCircle .light2{
+      top: 120px;
+      left: 361px;
+      width: 17px;
+      height: 17px;
+    }
+    #container .groupe .lightCircle .light3{
+      top: 240px;
+      left: 410px;
+      width: 17px;
+      height: 17px;
+    }
+    #container .groupe .lightCircle .light4{
+      top: 360px;
+      left: 361px;
+      width: 17px;
+      height: 17px;
+    }
+    #container .groupe .lightCircle .light5{
+      top: 410px;
+      left: 240px;
+      width: 17px;
+      height: 17px;
+    }
+    #container .groupe .lightCircle .light6{
+      top: 360px;
+      left: 120px;
+      width: 17px;
+      height: 17px;
+    }
+    #container .groupe .lightCircle .light7{
+      top: 239.5px;
+      left: 71px;
+      width: 17px;
+      height: 17px;
+    }
+    #container .groupe .lightCircle .light8{
+      top: 120px;
+      left: 121px;
+      width: 17px;
+      height: 17px;
+    }
+
+  }
+}
+
+@media all and (min-width: 180px) and (max-width: 1023px) {
+  @media all and (min-height: 375px) and (max-height: 750px) {
+
+    #container {
+      height: 100vh;
+      max-height: 100vh;
+      overflow-y: scroll;
+    }
+
+    #game .wrap-game {
+      margin-top: 30px;
+    }
+
+    #board .square {
+      min-width: 55px;
+      min-height: 55px;
+    }
+
+    #board-container .info {
+      max-width: 97%;
+      margin-bottom: 0;
+    }
+
+    #board-container{
+      max-width: 72%;
+    }
+
+    .message {
+      max-width: 98%;
+    }
+
+
+    #keyboard-container {
+      margin-top: 14px;
+    }
+
+    .keyboard-row {
+      height: 100%;
+      max-height: 35px;
+      min-height: 43px;
+    }
+
+    .wrap-modal-bg-stat {
+      width: 100%;
+      max-width: 80%;
+      height: 100%;
+      max-height: 30%;
+    }
+
+    .modal-form-stat {
+      height: 100%;
+      width: 100%;
+    }
+
+
+    .wrap-modal-win {
+      max-width: 69%;
+    }
+
+    #container .groupe {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      margin-top: 582px;
+    }
+
+    .wrapBigCircle {
+      left: 0;
+    }
+
+    #container .groupe .wrapBigCircle .big-circle {
+      width: 500px;
+      height: 500px;
+    }
+
+    #container .groupe .circle-log {
+      width: 100px;
+      height: 100px;
+    }
+
+    #container .shape-croix {
+      top: 10%;
+      left: 3%;
+      max-width: 11%;
+      max-height: 6%;
+    }
+
+    #container .shape-pyramids {
+      top: 46%;
+      right: -7%;
+      max-width: 16.5%;
+      max-height: 7%;
+    }
+
+    #container .shape-rectangle {
+      bottom: -25px;
+      left: -3%;
+      max-width: 11%;
+    }
+
+    #container .shape-flechLeft {
+      top: -178%;
+      left: 0%;
+      max-width: 135.5%;
+      max-height: 75%;
+      transform: rotate(-90deg);
+      animation: right-to-left 1.9s infinite 1.3s;
+    }
+
+    @keyframes right-to-left{
+      0%{
+        transform: translateY(0) rotate(-90deg);
+      }
+      50%{
+        transform: translateY(-7px) rotate(-90deg);
+      }
+      100%{
+        transform: translateY(0) rotate(-90deg);
+      }
+    }
+
+    #container .groupe .lightCircle .light1{
+      top: 70px;
+      left: 240.5px;
+      width: 17px;
+      height: 17px;
+    }
+    #container .groupe .lightCircle .light2{
+      top: 120px;
+      left: 361px;
+      width: 17px;
+      height: 17px;
+    }
+    #container .groupe .lightCircle .light3{
+      top: 240px;
+      left: 410px;
+      width: 17px;
+      height: 17px;
+    }
+    #container .groupe .lightCircle .light4{
+      top: 360px;
+      left: 361px;
+      width: 17px;
+      height: 17px;
+    }
+    #container .groupe .lightCircle .light5{
+      top: 410px;
+      left: 240px;
+      width: 17px;
+      height: 17px;
+    }
+    #container .groupe .lightCircle .light6{
+      top: 360px;
+      left: 120px;
+      width: 17px;
+      height: 17px;
+    }
+    #container .groupe .lightCircle .light7{
+      top: 239.5px;
+      left: 71px;
+      width: 17px;
+      height: 17px;
+    }
+    #container .groupe .lightCircle .light8{
+      top: 120px;
+      left: 120px;
+      width: 17px;
+      height: 17px;
+    }
+  }
+}

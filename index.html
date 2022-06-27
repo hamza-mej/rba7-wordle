@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no "/>
+    <title>كلمات</title>
+    <link rel="shortcut icon" type="image/png" href="images/logo.png">
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.css"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  </head>
+<!--  dir="rtl"-->
+  <body dir="rtl">
+
+    <div id="container">
+        <header>
+            <div class="wrapHeader ">
+                <div class="logo">
+                    <a class="logo-image d-flex justify-content-center" href="index.html">
+
+                        <img src="images/logo-rba7.svg" alt="logo">
+
+                    </a>
+                </div>
+            </div>
+        </header>
+
+      <div class="groupe">
+            <div class="wrapBigCircle">
+<!--                <img class="big-circle" src="images/big-circle.svg">-->
+                <div class="big-circle">
+                    <div class="lightCircle">
+                        <div class="light light1"></div>
+                        <div class="light light2"></div>
+                        <div class="light light3"></div>
+                        <div class="light light4"></div>
+                        <div class="light light5"></div>
+                        <div class="light light6"></div>
+                        <div class="light light7"></div>
+                        <div class="light light8"></div>
+                    </div>
+                </div>
+                <div class="wrapCircleLog">
+                    <img class="circle-log" src="images/circle-logo.svg">
+                    <img class="shape-flechLeft" src="images/fleche.svg">
+                </div>
+
+            </div>
+
+        </div>
+        <div class="shapes1">
+            <img class="shape-rectangle layer" data-speed="-5" src="images/shape-rectangle.svg">
+        </div>
+        <div class="shapes2">
+            <img class="shape-croix layer " data-speed="-5" src="images/shape-croix.svg">
+        </div>
+        <div class="shapes3">
+            <img class="shape-pyramids layer" data-speed="-5" src="images/shape-pyramids.svg">
+        </div>
+
+
+
+
+      <div id="game">
+          <div class="wrap-game">
+              <div id="board-container" class="">
+                  <div class="info">
+                      <div class="wrap-info">
+                          <div class="message">
+                              <div class="alertMessage" role="alert">
+
+                              </div>
+                              <div class="alertFin" role="alert">
+
+                              </div>
+                          </div>
+                          <div class="icon-info">
+                              <button class="modal-btn"><i class="fa-regular fa-circle-question"></i></button>
+
+                              <button class="modal-btn-statistics "><i class="fa-regular fa-chart-bar"></i></button>
+                          </div>
+
+
+
+                          <div class="modal-bg">
+                              <div class="wrap-modal-bg">
+                                  <div class="modal-form">
+                                      <h4>كيفية اللعب</h4>
+                                      <p class="text-center" >خمن الكلمة المطلوبة في ست محاولات، بعد كل تخمين ستتلون الأحرف لتعكس مدى صحة التخمين</p>
+
+                                        <div class="modal-s">
+                                            <div class="modal-square first green text-white">م</div>
+                                            <div class="modal-square">ق</div>
+                                            <div class="modal-square">ا</div>
+                                            <div class="modal-square">ل</div>
+                                            <div class="modal-square last">ة</div>
+                                        </div>
+                                        <p>الحرف (م) موجود في الكلمة المطلوبة وفي مكانه الصحيح</p>
+                                        <div class="modal-s">
+                                            <div class="modal-square first">م</div>
+                                            <div class="modal-square">ن</div>
+                                            <div class="modal-square orange text-white">ا</div>
+                                            <div class="modal-square">ر</div>
+                                            <div class="modal-square last">ة</div>
+                                        </div>
+                                        <p>الحرف (ا) موجود في الكلمة المطلوبة لكنه موجود في غير موضعه</p>
+                                        <div class="modal-s">
+                                            <div class="modal-square first">ا</div>
+                                            <div class="modal-square">ل</div>
+                                            <div class="modal-square">ش</div>
+                                            <div class="modal-square gray text-white">م</div>
+                                            <div class="modal-square last ">س</div>
+                                        </div>
+                                      <p>الحرف (م) غير موجود في الكلمة</p>
+                                      <!--                        <span class="modal-close">X</span>-->
+                                      <i class="fa-regular fa-circle-xmark modal-close"></i>
+                                  </div>
+                              </div>
+
+                          </div>
+
+                          <div class="modal-bg-stat">
+                              <div class="wrap-modal-bg-stat">
+                                  <div class="modal-form-stat">
+                                      <p class="titleStat mt-3">إحصائيات اللعبة</p>
+
+                                      <div class="wrap-stat">
+                                          <div class="wrap-stat-item">
+                                              <div class="textValue" id="total-played"></div>
+                                              <p class="text-center" >عدد المحاولات الكلية</p>
+                                          </div>
+                                          <div class="wrap-stat-item">
+                                              <div class="textValue" id="win-pct"></div>
+                                              <p class="text-center" >معدّل النجاح</p>
+                                          </div>
+                                          <div class="wrap-stat-item">
+                                              <div class="textValue" id="total-wins"></div>
+                                              <p class="text-center">مرّات النجاح على التوالي</p>
+                                          </div>
+                                          <div class="wrap-stat-item">
+                                              <div class="textValue" id="current-streak"></div>
+                                              <p class="text-center">أفضل تسلسل للنجاح</p>
+                                          </div>
+                                      </div>
+
+                                      <div class="time">
+                                          <p class="timeLeft"></p>
+                                          <p class="timeL"></p>
+                                      </div>
+
+
+                                      <i class="fa-regular fa-circle-xmark modal-close-stat"></i>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="modal-win">
+                              <div class="wrap-modal-win">
+                                  <div class="modal-form-win">
+                                      <div class="wrap_img">
+                                          <img src="images/award.png" class=" border-0 ">
+                                      </div>
+
+                                      <h2>تهانينا <i class="fa-regular fa-face-smile smile-icon"></i></h2>
+                                      <!--                                  <p class="text-center" >لقد تم اختيارك <b> كفائز</b> اليوم  <br>كل ما عليك فعله مشاركتنا على الواتس اب <span class="text-danger">الآن</span></p>-->
+                                      <p class="text-center" >لقد اكتشفت <b> كلمة</b> اليوم  <br>سارع وشارك معنا نتيجتك <span class="text-danger">فوراً</span> لتضاعف حظوظك بالفوز</p>
+
+                                      <button  type="button" class="btn">
+                                          <a href='https://wa.me/212615132648?text=! مرحبا، لقد اكتشفتُ كلمة اليوم'  target="blank" class="abtn">
+                                              <i class="fa-brands fa-whatsapp">&nbsp; شارك </i>
+                                          </a>
+                                      </button>
+
+                                      <i class="fa-regular fa-circle-xmark modal-close-winner"></i>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div id="board">
+
+                  </div>
+              </div>
+
+              <div id="keyboard-container">
+                  <div class="keyboard-row">
+                      <button class="keys " data-key="ج">ج</button>
+                      <button class="keys" data-key="ح">ح</button>
+                      <button class="keys" data-key="خ">خ</button>
+                      <button class="keys" data-key="ه">ه</button>
+                      <button class="keys" data-key="ع">ع</button>
+                      <button class="keys" data-key="غ">غ</button>
+                      <button class="keys keyLineUp" data-key="ف">ف</button>
+                      <button class="keys keyLineUp" data-key="ق">ق</button>
+                      <button class="keys keyLineUp" data-key="ث">ث</button>
+                      <button class="keys" data-key="ص">ص</button>
+                      <button class="keys" data-key="ض">ض</button>
+                  </div>
+                  <div class="keyboard-row">
+                      <div class="spacer-half"></div>
+                      <button class="keys keySmall" data-key="ط">ط</button>
+                      <button class="keys keyLineUp" data-key="ك">ك</button>
+                      <button class="keys" data-key="م">م</button>
+                      <button class="keys" data-key="ن">ن</button>
+                      <button class="keys keyLineUp" data-key="ت">ت</button>
+                      <button class="keys" data-key="ا">ا</button>
+                      <button class="keys" data-key="ل">ل</button>
+                      <button class="keys" data-key="ب">ب</button>
+                      <button class="keys" data-key="ي">ي</button>
+                      <button class="keys" data-key="س">س</button>
+                      <button class="keys" data-key="ش">ش</button>
+                      <div class="spacer-half"></div>
+                  </div>
+                  <div class="keyboard-row">
+                      <button class="keys back_space wide-button" data-key="del"  ><i class="fas fa-backspace" data-key="del"></i></button>
+                      <button class="keys " data-key="د">د</button>
+                      <button class="keys" data-key="ذ">ذ</button>
+                      <button class="keys" data-key="ظ">ظ</button>
+                      <button class="keys" data-key="ز">ز</button>
+                      <button class="keys" data-key="و">و</button>
+                      <button class="keys keyLineUp" data-key="ة">ة</button>
+                      <button class="keys" data-key="ى">ى</button>
+                      <button class="keys" data-key="ر">ر</button>
+                      <button class="keys" data-key="ؤ">ؤ</button>
+                      <button class="keys" data-key="ء">ء</button>
+                      <button class="keys" data-key="ئ">ئ</button>
+<!--                      <button class="keys enter_key wide-button" data-key="enter">أدخل</button>-->
+
+                  </div>
+                  <div class="keyboard-row">
+                      <div class="wrap-keyboard-row-btn enter-btn">
+                          <button  data-key="v-btn" class="v-btn">جرب الحل</button>
+                      </div>
+                      <div class="div-btn whatsapp-btn">
+                          <button  type="button" class="btn">
+                              <a href='https://wa.me/212615132648?text=! مرحبا، لقد اكتشفتُ كلمة اليوم'  target="blank" class="btn-1">
+                                  <i class="fa-brands fa-whatsapp">&nbsp; شارك </i>
+                              </a>
+                          </button>
+                      </div>
+                  </div>
+
+
+              </div>
+          </div>
+
+      </div>
+        
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
+

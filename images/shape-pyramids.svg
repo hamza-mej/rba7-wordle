@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="197.995" height="198.854" viewBox="0 0 197.995 198.854">
+  <g id="Latest-Landing" transform="matrix(0.921, -0.391, 0.391, 0.921, 0, 49.84)">
+    <g id="Group" transform="translate(0.75 0.75)">
+      <g id="Shapes-_-triangle-with-lines" data-name="Shapes-/-triangle-with-lines" transform="translate(0)">
+        <path id="half_of_triangle" d="M73.19,161.132.75,112.2,73.19.75Z" transform="translate(-0.75 -0.75)" fill="#002f93" stroke="#0f052e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <path id="half_of_triangle-2" d="M154.34,21.554V170.4l72.44-48.928L159.721,18.3" transform="translate(-81.9 -10.023)" fill="#ff78b0" stroke="#0f052e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <g id="lines" transform="translate(72.435 0)">
+          <path id="Path" d="M5.721,9.027.34.75V12.282" transform="translate(-0.335 -0.75)" fill="#ff78b0" stroke="#0f052e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <line id="Path-2" data-name="Path" y1="43.566" x2="64.493" transform="translate(0.005 99.229)" fill="none" stroke="#0f052e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <line id="Path-3" data-name="Path" y1="38.623" x2="57.177" transform="translate(0.005 87.971)" fill="none" stroke="#0f052e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <line id="Path-4" data-name="Path" y1="5.929" x2="8.777" transform="translate(41.066 76.68)" fill="none" stroke="#0f052e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <line id="Path-5" data-name="Path" y1="24.464" x2="36.217" transform="translate(0.005 85.882)" fill="none" stroke="#0f052e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <line id="Path-6" data-name="Path" y1="28.572" x2="42.297" transform="translate(0.005 65.077)" fill="none" stroke="#0f052e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <line id="Path-7" data-name="Path" y1="23.445" x2="34.704" transform="translate(0.005 53.956)" fill="none" stroke="#0f052e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <line id="Path-8" data-name="Path" y1="18.46" x2="27.327" transform="translate(0.137 42.25)" fill="none" stroke="#0f052e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <line id="Path-9" data-name="Path" y1="13.593" x2="20.12" transform="translate(0.005 30.959)" fill="none" stroke="#0f052e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <line id="Path-10" data-name="Path" y1="8.593" x2="12.725" transform="translate(0 19.573)" fill="none" stroke="#0f052e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <line id="Path-11" data-name="Path" y1="3.533" x2="5.231" transform="translate(0.113 8.216)" fill="none" stroke="#0f052e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
